@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lending library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>the library</h1>
+    <p>Search for author by name</p>
+    <input id="authorSearch" >
+    <button type="button" onclick="authSearch()">search</button>
+    <ol id='result'>
+    
+    </ol>
+
+    <p>Search for a book by genre.</p>
+    <input id="bookGenreSearch" >
+    <button type="button" onclick="bookGenreSearch()">search</button>
+    <ol id='result3'>
+    
+    </ol>
+
+    <h2>Add a book to the library</h2>
+    <p>Author</p><input id="addAuthor">
+    <p>Title</p><input id="addBook">
+    <p>Genre</p><input id="addGenre">
+    <p>Copies</p><input id="addCopies">
+    <button type="button" onclick="addBook(books)">add</button>
+    <ol id='result2'></ol>
+
+    <h2>Books currently in the library</h2>
+    <button type="button" onclick="showAllBooks()">show books</button>
+    <ol id="allTheBooks">
+
+    </ol>
+
+    <h2>Create a new user</h2>    
+    <p>Name:</p>
+    <input id="txtName">
+    <button type="button" onclick="addUser()">add</button>
+    <ol id='result4'></ol>
+
+    <h2>Library customers</h2>
+    <button type="button" onclick="showAllUsers()">show users</button>
+    <ol id="allTheUsers">
+
+    </ol>
+
+    <h2>Borrow a book</h2>    
+    <p>Books:</p>
+    <select id="cboBook">
+        <option value=""></option>
+    </select>
+
+    <p>Users:</p>
+    <select id="cboUser">
+        <option value=""></option>
+    </select>
+
+    <p>Due Date:</p>
+    <input id="txtDate">
+    
+    <button type="button" onclick="borrow()">borrow</button>
+
+    <ol id='result5'></ol>
+
+
+  </main>
+  <footer>
+    <p>wmdd 4820 2016</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
